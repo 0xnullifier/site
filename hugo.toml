@@ -1,8 +1,7 @@
 baseURL = 'https://www.0xnullifier.xyz/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = '0xnullifier'
 theme = "hugo-theme-console"
-
 [params]
 # Cutting off the page title to two chars for mobile (console-demo -> co)
 titleCutting = true
@@ -11,14 +10,6 @@ titleCutting = true
 # To disable animations, please remove or comment animationStyle parameter
 animateStyle = "animated zoomIn fast"
 
-[[params.navlinks]]
-name = "about/"
-url = "about/"
-
-[[params.navlinks]]
-name = "posts/"
-url = "posts/"
-
-[[params.navlinks]]
-name = "photos/"
-url = "photos/"
+# [[params.navlinks]]
+# name = "blog/"
+# url = "blogs/"
