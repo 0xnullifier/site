@@ -1,4 +1,4 @@
-baseURL = 'https://www.0xnullifier.xyz/'
+baseURL = 'https://www.0xnullifier.xyz'
 languageCode = 'en-us'
 title = '0xnullifier'
 theme = "hugo-theme-console"
