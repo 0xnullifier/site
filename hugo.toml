@@ -10,6 +10,6 @@ titleCutting = true
 # To disable animations, please remove or comment animationStyle parameter
 animateStyle = "animated zoomIn fast"
 
-# [[params.navlinks]]
-# name = "blog/"
-# url = "blogs/"
+[[params.navlinks]]
+name = "blog/"
+url = "blogs/"
