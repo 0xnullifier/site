@@ -1,6 +1,5 @@
 +++
 date = '2025-01-03T21:40:39+05:30'
-draft = true
 name = 'Utkarsh Sharma'
 +++
 
