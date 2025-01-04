@@ -13,3 +13,7 @@ animateStyle = "animated zoomIn fast"
 [[params.navlinks]]
 name = "blog/"
 url = "blogs/"
+
+[[params.navlinks]]
+name = "github"
+url = "https://github.com/0xnullifier"

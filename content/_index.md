@@ -8,7 +8,7 @@ Yo! I am Utkarsh Sharma
 
 ## About Me
 
-I am Pre-final year at IIT Roorkee with a liking in software developement escpecially in the crypto space!.
-I love learning about Zk Crytography , blockchains and Distributed systems in general and large-scale software. Recently I have developed an interest in AI agents. I like learning new technologies and languages.
+I am Pre-final year at IIT Roorkee, passionate about software developement escpecially in the crypto space!.
+I love learning about zk-crytography , blockchains and distributed systems in general and large-scale software. Recently I have developed an interest in AI agents. I like learning new technologies and languages.
 
 ## todo!("Write some nice things yourself")
