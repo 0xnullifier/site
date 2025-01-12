@@ -1,19 +1,25 @@
 baseURL = 'https://www.0xnullifier.xyz'
-languageCode = 'en-us'
-title = '0xnullifier'
-theme = "hugo-theme-console"
-[params]
-# Cutting off the page title to two chars for mobile (console-demo -> co)
-titleCutting = true
+theme = "hugo-bearblog"
+enableRobotsTXT = true
+title = "0xnullifier"
+disableKinds = ["taxonomy", "404", "term"]
 
-# Set the animation style -- https://animate.style/
-# To disable animations, please remove or comment animationStyle parameter
-animateStyle = "animated zoomIn fast"
+
+[params]
+
+author = "0xnullifier"
+
 
 [[params.navlinks]]
-name = "blog/"
+name = "blogs/"
 url = "blogs/"
-
+title = "My Blogs"
 [[params.navlinks]]
 name = "github"
 url = "https://github.com/0xnullifier"
+title = "Github"
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+hardWraps = true
