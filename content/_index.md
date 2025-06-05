@@ -3,7 +3,7 @@ date = '2025-01-03T21:40:39+05:30'
 name = 'Utkarsh Sharma'
 +++
 
-Yo! I am Utkarsh Sharma
+Yo! I am Utkarsh
 
 ## About Me
 

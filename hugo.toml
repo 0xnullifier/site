@@ -9,17 +9,25 @@ disableKinds = ["taxonomy", "404", "term"]
 
 author = "0xnullifier"
 
-
 [[params.navlinks]]
 name = "blogs/"
-url = "blogs/"
+url = "https://www.0xnullifier.xyz/blogs/"
 title = "My Blogs"
 [[params.navlinks]]
 name = "github"
 url = "https://github.com/0xnullifier"
 title = "Github"
+[[params.navlinks]]
+name = "X"
+url = "https://x.com/0xnullifier"
+title = "X"
 
 [markup]
 [markup.goldmark]
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = true
+[markup.goldmark.parser.attribute]
+block = true
 [markup.goldmark.renderer]
 hardWraps = true
+unsafe = true

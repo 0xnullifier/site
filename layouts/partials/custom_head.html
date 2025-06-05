@@ -1,0 +1,97 @@
+<!-- MathJax Configuration for LaTeX support -->
+<script>
+    window.MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        options: {
+            skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            ignoreHtmlClass: 'tex2jax_ignore',
+            processHtmlClass: 'tex2jax_process'
+        }
+    };
+</script>
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+<script>
+    // Theme switching functionality
+    (function () {
+        'use strict';
+
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        function setInitialTheme() {
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            } else if (systemPrefersDark) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        }
+
+        setInitialTheme();
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const themeToggle = document.getElementById('theme-toggle');
+            const sunIcon = document.getElementById('sun-icon');
+            const moonIcon = document.getElementById('moon-icon');
+
+            if (!themeToggle || !sunIcon || !moonIcon) return;
+
+            function updateIcon() {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                if (currentTheme === 'dark') {
+                    // Show sun icon in dark mode (to switch to light)
+                    sunIcon.style.display = 'block';
+                    moonIcon.style.display = 'none';
+                } else {
+                    // Show moon icon in light mode (to switch to dark)
+                    sunIcon.style.display = 'none';
+                    moonIcon.style.display = 'block';
+                }
+            }
+
+            updateIcon();
+
+            function toggleTheme() {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                updateIcon();
+
+                // Remove focus from the button after clicking
+                themeToggle.blur();
+            }
+
+            themeToggle.addEventListener('click', toggleTheme);
+
+            themeToggle.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleTheme();
+                }
+            });
+        });
+
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+            if (!localStorage.getItem('theme')) {
+                const newTheme = e.matches ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', newTheme);
+
+                const themeIcon = document.getElementById('theme-icon');
+                if (themeIcon) {
+                    themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+                }
+            }
+        });
+    })();
+</script>

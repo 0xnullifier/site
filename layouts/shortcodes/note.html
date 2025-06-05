@@ -1,0 +1,4 @@
+{{ $type := .Get "type" | default "default" }}
+<div class="note {{ $type }}">
+    {{ .Inner | markdownify }}
+</div>
