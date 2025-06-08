@@ -449,4 +449,100 @@
             --circom-pragma: #c586c0;
         }
     }
+
+    /* Mermaid diagram size control */
+    .mermaid-container {
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .mermaid {
+        max-width: 100%;
+        height: auto;
+        max-height: 500px;
+        margin: 0 auto;
+        display: block;
+        /* Control maximum height */
+    }
+
+    /* Optional: Make diagrams smaller on mobile */
+    @media (max-width: 768px) {
+        .mermaid {
+            max-height: 400px;
+            font-size: 0.8rem;
+        }
+    }
+
+    /* You can also create specific size classes */
+    .mermaid-small {
+        max-height: 300px;
+        max-width: 400px;
+    }
+
+    .mermaid-medium {
+        max-height: 500px;
+        max-width: 600px;
+    }
+
+    .mermaid-large {
+        max-height: 700px;
+        max-width: 800px;
+    }
+
+    /* Heading anchor links */
+    .heading-anchor {
+        opacity: 0;
+        margin-left: 0.5rem;
+        color: #999;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 0.8em;
+        transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .anchor-symbol {
+        display: inline-block;
+        transition: transform 0.1s ease-in-out;
+    }
+
+    /* Show anchor on heading hover */
+    h1:hover .heading-anchor,
+    h2:hover .heading-anchor,
+    h3:hover .heading-anchor,
+    h4:hover .heading-anchor,
+    h5:hover .heading-anchor,
+    h6:hover .heading-anchor {
+        opacity: 0.5;
+    }
+
+    /* Brighten anchor on direct hover */
+    .heading-anchor:hover {
+        opacity: 1 !important;
+        color: var(--link-color);
+    }
+
+    .heading-anchor:hover .anchor-symbol {
+        transform: scale(1.1);
+    }
+
+    /* Position headings relatively for better anchor positioning */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        position: relative;
+        scroll-margin-top: 2rem;
+    }
+
+    /* Ensure anchor links don't interfere with text selection */
+    .heading-anchor {
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
 </style>

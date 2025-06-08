@@ -23,9 +23,9 @@ Most of my experience comes from grants or building hackathon projects. I will m
 - **StealthTradeDao**: was made at ETHSingapore 2024. It won first prize in Mina and also won the NEAR protocl track. It was private perpetuals platform on MINA protocol. Checkout the [showcase](https://ethglobal.com/showcase/stealthtradedao-8jt17).
 - **Akashpay**: this was actually one of the first projects I made and introduced me to the world of web3 and thus I am adding it to my experiences. It was made for akahasthon2 hackathon and is a fiat onramp for akt token. It won first place in the deployment track. Here is the [submission](https://dorahacks.io/buidl/12768)
 
-And more hackathons that I have won are:
+And few more hackathons that I have won are:
 
-- First place in **Funding the Commons** *NEAR track* for [VielNetFL](https://dorahacks.io/buidl/18948)
+- First place in **Funding the Commons** *NEAR track* and Third place in the *FileCoin* Track for [VielNetFL](https://dorahacks.io/buidl/18948)
 - First place in *Defi Track* of **MovementLabs Hackathons** for [MOVEx](https://dorahacks.io/buidl/14159)
 - First place in *Defi Track* of **Archway hackathon** for [Mosaic Protocol](https://dorahacks.io/buidl/13783)
 - First place in **Fluence Track HackFS-2024** for [Key Shard](https://ethglobal.com/showcase/keyshard-odizm)

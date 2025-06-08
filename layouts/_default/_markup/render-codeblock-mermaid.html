@@ -1,0 +1,10 @@
+{{- $size := "medium" -}}
+{{- if .Attributes.size -}}
+{{- $size = .Attributes.size -}}
+{{- end -}}
+<div class="mermaid-container">
+    <pre class="mermaid mermaid-{{ $size }}">
+  {{- .Inner | htmlEscape | safeHTML }}
+  </pre>
+</div>
+{{ .Page.Store.Set "hasMermaid" true }}
