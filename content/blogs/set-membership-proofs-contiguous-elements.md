@@ -2,6 +2,18 @@
 date = '2025-06-08T12:57:53.567Z'
 name = 'Utkarsh Sharma'
 title = "Set Membership Proofs for Contiguous Elements"
+banner = "/img/cont_set/banner.png"
+description = "Learn how to efficiently prove contiguous elements in sets using optimized Merkle tree constructions. Reduce circuit constraints by 75% compared to traditional approaches in zero-knowledge proofs."
+keywords = ["zero-knowledge", "merkle trees", "set membership", "circom", "cryptography", "zk-proofs", "blockchain", "privacy", "whistleblowing", "audit path"]
+tags = ["Zero-Knowledge", "Cryptography", "Merkle Trees", "Circom", "Blockchain", "Privacy"]
+categories = ["Cryptography", "Blockchain"]
+author = "Utkarsh Sharma"
+slug = "set-membership-proofs-contiguous-elements"
+canonicalURL = "https://www.0xnullifier.xyz/blogs/set-membership-proofs-contiguous-elements/"
+images = ["/img/cont_set/banner.png"]
+toc = true
+readingTime = true
+math = true
 +++
 
 # Set Membership Proofs for Contiguous Elements
@@ -366,5 +378,23 @@ template GenerateRoot(maxSegmentSize, height, nBits) {
 The trivial algorithm was 2.33M constraints, and the `GenerateRoot` template is only 533K constraints, which is over a 75% improvement. Though one thing more we have to do is verify that the root was computed correctly and that it had included the whole body of the email in the leaf nodes; the circuit for this is around 700K constraints. Thus, for the full circuit, it has 1.2M constraints, which is still a 50% improvement.
 
 The circuit is available in the [ZeroLeaks repository](https://github.com/0xnullifier/ZeroLeaks/tree/master/circuits); you can run the test using `pnpm test`.
+
+## Conclusion
+
+In this article, we explored an innovative approach to proving contiguous set membership using optimized Merkle tree constructions. The key insights were:
+
+1. **Efficiency Gains**: Our approach achieves a 75% reduction in circuit constraints compared to naive implementations
+2. **Practical Applications**: The method is particularly valuable for privacy-preserving applications like the whistleblowing platform discussed
+3. **Technical Innovation**: By leveraging layer-by-layer processing and smart audit path computation, we can efficiently prove substring membership without revealing positions
+
+This construction opens up new possibilities for zero-knowledge applications where proving the existence of contiguous data patterns is crucial while maintaining privacy. The technique can be extended to other domains beyond email verification, such as document authentication, data integrity proofs, and privacy-preserving search.
+
+### Future Work
+
+Potential areas for improvement and extension include:
+
+- Optimizing for even larger datasets
+- Exploring applications in other zero-knowledge use cases
+- Investigating dynamic membership proofs for evolving datasets
 
 If you have any more doubts or want to chat, drop me a DM on [X](https://x.com/0xnullifier).

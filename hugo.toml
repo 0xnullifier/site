@@ -3,11 +3,35 @@ theme = "hugo-bearblog"
 enableRobotsTXT = true
 title = "0xnullifier"
 disableKinds = ["taxonomy", "404", "term"]
-
+languageCode = "en-us"
+defaultContentLanguage = "en"
+enableGitInfo = true
+enableEmoji = true
 
 [params]
-
 author = "0xnullifier"
+description = "Personal sites and blogs about cryptography, zero-knowledge proofs, blockchain technology, and privacy-preserving systems"
+keywords = [
+    "cryptography",
+    "zero-knowledge",
+    "blockchain",
+    "privacy",
+    "merkle trees",
+    "zk-proofs",
+    "circom",
+]
+twitter = "https://x.com/0xnullifer"
+social = ["https://github.com/0xnullifier", "https://twitter.com/0xnullifier"]
+[params.breadcrumb]
+home = "Home"
+
+[sitemap]
+changefreq = "weekly"
+priority = 0.8
+
+[taxonomies]
+tag = "tags"
+category = "categories"
 
 [[params.navlinks]]
 name = "blogs/"
